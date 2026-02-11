@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/probe/bpe",
+    "command": "cc -c src/bpe.c -Ithirdparty -Isrc",
+    "file": "src/bpe.c"
+  }
+]
