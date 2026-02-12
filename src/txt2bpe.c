@@ -134,7 +134,7 @@ int main(int argc, char **argv) {
 
     // make sure the output dir is clean and not exist before
     if(output_dir_exist) {
-	fprintf(stderr, "ERROR: Directory %s already exists, delete it or rename it to not lose any data in it\n");
+	fprintf(stderr, "ERROR: Directory %s already exists, delete it or rename it to not lose any data in it\n",output_dir_path);
 	return 1;
     }
 
@@ -160,7 +160,7 @@ int main(int argc, char **argv) {
 
     // construct the tokens_in 
     for(uint32_t i = 0; i < sb.count; ++i) {
-	da_append(&tokens_in, (uint8_t)sb.items[i])
+	da_append(&tokens_in, (uint8_t)sb.items[i]);
     }
 
     // profile_samples pointer points to the starting position of a new memeory
