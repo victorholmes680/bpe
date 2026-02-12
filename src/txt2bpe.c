@@ -1,5 +1,5 @@
 #include <assert.h>
-#include <bits/time.h>
+#include <time.h>
 #include <stddef.h>
 #include <time.h>
 #include <stdint.h>
@@ -128,7 +128,7 @@ int main(int argc, char **argv) {
     // RETURNS:
     //  0 - file does not exists
     //  1 - file exists
-    int output_dir_exist = file_exists(output_dir_path);
+    int output_dir_exist = nob_file_exists(output_dir_path);
 
     if(output_dir_exist < 0) return 1;
 
