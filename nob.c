@@ -17,7 +17,10 @@ void build_tool_async(Cmd *cmd, Procs *procs, const char *bin_path, const char *
 
 
 const char *tools[] = {
-    "txt2bpe"
+    "txt2bpe",
+    "tkn_inspect",
+    "bpe_inspect"
+
 };
 
 int main(int argc, char **argv) {
